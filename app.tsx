@@ -772,12 +772,12 @@ function Footer() {
             PayAll
           </div>
           <div className="footer-links">
-            <a href="#">{t.footer.privacy}</a>
-            <a href="#">{t.footer.terms}</a>
+            <a href="https://static.payall.pro/payall-privacy-en.html" target="_blank" rel="noopener noreferrer">{t.footer.privacy}</a>
+            <a href="https://static.payall.pro/payall-terms-service-en.html" target="_blank" rel="noopener noreferrer">{t.footer.terms}</a>
           </div>
         </div>
         <div className="footer-right">
-          <a href="mailto:hello@payall.pro" className="footer-social" aria-label="Email">
+          <a href="mailto:support@payall.pro" className="footer-social" aria-label="Email">
             <IconMail />
           </a>
           <a href="https://x.com/PayAllU" className="footer-social" target="_blank" rel="noopener noreferrer" aria-label="X">
