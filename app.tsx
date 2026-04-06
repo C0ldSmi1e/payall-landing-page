@@ -404,7 +404,7 @@ function Nav() {
               ZH
             </button>
           </div>
-          <button className="nav-cta">{t.nav.cta}</button>
+          <a href="https://app.payall.pro/" target="_blank" rel="noopener noreferrer" className="nav-cta">{t.nav.cta}</a>
         </div>
       </div>
     </nav>
@@ -437,12 +437,12 @@ function Hero() {
             {t.hero.headline3}
           </h1>
           <p className="hero-subtitle">{t.hero.subtitle}</p>
-          <button className="hero-cta">
+          <a href="https://app.payall.pro/" target="_blank" rel="noopener noreferrer" className="hero-cta">
             {t.hero.cta}
             <span className="hero-cta-arrow">
               <IconArrowRight />
             </span>
-          </button>
+          </a>
           <div className="hero-stats">
             <div>
               <div className="hero-stat-value">{t.hero.stat1val}</div>
@@ -751,10 +751,10 @@ function CtaBanner() {
           <h2 className="cta-banner-title">{t.ctaBanner.title}</h2>
           <p className="cta-banner-subtitle">{t.ctaBanner.subtitle}</p>
         </div>
-        <button className="hero-cta reveal reveal-delay-1">
+        <a href="https://app.payall.pro/" target="_blank" rel="noopener noreferrer" className="hero-cta reveal reveal-delay-1">
           {t.ctaBanner.cta}
           <span className="hero-cta-arrow"><IconArrowRight /></span>
-        </button>
+        </a>
       </div>
     </section>
   );
@@ -780,7 +780,7 @@ function Footer() {
           <a href="mailto:hello@payall.pro" className="footer-social" aria-label="Email">
             <IconMail />
           </a>
-          <a href="https://x.com/payall" className="footer-social" target="_blank" rel="noopener noreferrer" aria-label="X">
+          <a href="https://x.com/PayAllU" className="footer-social" target="_blank" rel="noopener noreferrer" aria-label="X">
             <IconX />
           </a>
           <span className="footer-copyright">{t.footer.copyright}</span>
