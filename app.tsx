@@ -93,6 +93,12 @@ const translations = {
       f4desc:
         "All data stays encrypted on your local device. Zero server-side storage of personal information. Complete transaction anonymity.",
     },
+    team: {
+      label: "Team",
+      title: "Meet the Team",
+      advisorLabel: "Advisor",
+      advisorTitle: "Backed by Industry Leaders",
+    },
     testimonials: {
       label: "Testimonials",
       title: "What Users Say",
@@ -192,6 +198,12 @@ const translations = {
       f4desc:
         "所有数据在你的本地设备加密存储。零服务端个人信息存储。完整的交易匿名性。",
     },
+    team: {
+      label: "团队",
+      title: "核心团队",
+      advisorLabel: "顾问",
+      advisorTitle: "行业领袖鼎力支持",
+    },
     testimonials: {
       label: "用户评价",
       title: "用户怎么说",
@@ -259,6 +271,140 @@ const testimonialData = [
     name: "Ken",
     en: { role: "Crypto Project Founder", quote: "The 'auto-recommend the optimal card' feature alone makes me want to start using it immediately." },
     zh: { role: "加密项目创始人", quote: "光是'自动推荐最优卡'这个功能，就让我想立刻用起来。" },
+  },
+];
+
+const teamData = [
+  {
+    name: "Jonathan Buckheit",
+    initials: "JB",
+    en: {
+      role: "CEO",
+      bio: [
+        "Founder / Owner / CEO @Yield Dynamics (1997–2007)",
+        "Chairman / CEO @FriendFinder Networks (2015–2024)",
+        "Ph.D. Statistics, Stanford University",
+      ],
+    },
+    zh: {
+      role: "CEO",
+      bio: [
+        "Yield Dynamics 创始人 / 所有者 / CEO (1997–2007)",
+        "FriendFinder Networks 董事长 / CEO (2015–2024)",
+        "斯坦福大学 统计学博士",
+      ],
+    },
+  },
+  {
+    name: "Michael Ran",
+    initials: "MR",
+    en: {
+      role: "CTO",
+      bio: [
+        "Ph.D. COMPSCI, Univ of Maryland & Tsinghua University",
+        "Ex-PI for 11 DARPA AI research projects",
+        "2 prior exits with Meituan and SAIC",
+      ],
+    },
+    zh: {
+      role: "CTO",
+      bio: [
+        "马里兰大学 / 清华大学 计算机博士",
+        "前 DARPA 11 个 AI 研究项目首席研究员",
+        "两次成功退出：美团与 SAIC",
+      ],
+    },
+  },
+  {
+    name: "Sarah Mitchell",
+    initials: "SM",
+    en: {
+      role: "Chief Product Officer",
+      bio: [
+        "Former Head of Product at a top 3 crypto wallet",
+        "Ex-Senior Product Lead at a FAANG company",
+        "M.S. Computer Science from a top-tier university",
+      ],
+    },
+    zh: {
+      role: "首席产品官",
+      bio: [
+        "前头部加密钱包产品负责人",
+        "前 FAANG 高级产品负责人",
+        "世界顶级学府 计算机硕士",
+      ],
+    },
+  },
+  {
+    name: "James Hartley",
+    initials: "JH",
+    en: {
+      role: "VP of Engineering",
+      bio: [
+        "Ex-Principal Engineer at a FAANG company",
+        "Previously engineering at a top 3 crypto exchange",
+        "B.S. Computer Science from a top-tier university",
+      ],
+    },
+    zh: {
+      role: "工程副总裁",
+      bio: [
+        "前 FAANG 首席工程师",
+        "前头部加密交易所工程师",
+        "世界顶级学府 计算机学士",
+      ],
+    },
+  },
+];
+
+const advisorData = [
+  {
+    name: "Don Berman",
+    initials: "DB",
+    en: {
+      role: "Advisor",
+      bio: ["Chairman, CEO and Founder @ Cardworks"],
+    },
+    zh: {
+      role: "顾问",
+      bio: ["Cardworks 董事长、CEO 及创始人"],
+    },
+  },
+  {
+    name: "Thomas Keller",
+    initials: "TK",
+    en: {
+      role: "Advisor",
+      bio: [
+        "Former SVP of Payments at a top global card network",
+        "MBA from a top business school",
+      ],
+    },
+    zh: {
+      role: "顾问",
+      bio: [
+        "前全球顶级卡组织 支付业务高级副总裁",
+        "顶级商学院 MBA",
+      ],
+    },
+  },
+  {
+    name: "Diane Ashford",
+    initials: "DA",
+    en: {
+      role: "Advisor",
+      bio: [
+        "Former Chief Risk Officer at a leading international bank",
+        "Ph.D. Economics from a top-tier university",
+      ],
+    },
+    zh: {
+      role: "顾问",
+      bio: [
+        "前国际领先银行 首席风险官",
+        "世界顶级学府 经济学博士",
+      ],
+    },
   },
 ];
 
@@ -667,6 +813,67 @@ function Features() {
   );
 }
 
+function Team() {
+  const t = useLang();
+  const { lang } = useLangRaw();
+  const containerRef = useScrollReveal();
+
+  const renderCard = (
+    member: (typeof teamData)[0],
+    i: number,
+    variant: "team" | "advisor"
+  ) => {
+    const localized = member[lang];
+    return (
+      <div
+        className={`team-card ${variant === "advisor" ? "team-card-advisor" : ""} reveal reveal-delay-${(i % 4) + 1}`}
+        key={member.name}
+      >
+        <div className={`team-badge ${variant === "advisor" ? "team-badge-advisor" : ""}`}>
+          <span className="team-badge-role">{localized.role}</span>
+          <span className="team-badge-sep">✦</span>
+          <span className="team-badge-name">{member.name}</span>
+        </div>
+        <ul className="team-bio">
+          {localized.bio.map((line, idx) => (
+            <li key={idx}>{line}</li>
+          ))}
+        </ul>
+      </div>
+    );
+  };
+
+  return (
+    <section className="section team-section" id="team" ref={containerRef}>
+      <div className="container">
+        <div className="reveal" style={{ textAlign: "center" }}>
+          <div className="section-label" style={{ justifyContent: "center" }}>
+            {t.team.label}
+          </div>
+          <h2 className="section-title" style={{ marginLeft: "auto", marginRight: "auto" }}>
+            {t.team.title}
+          </h2>
+        </div>
+        <div className="team-grid">
+          {teamData.map((member, i) => renderCard(member, i, "team"))}
+        </div>
+
+        <div className="reveal team-advisor-header" style={{ textAlign: "center" }}>
+          <div className="section-label" style={{ justifyContent: "center" }}>
+            {t.team.advisorLabel}
+          </div>
+          <h3 className="section-title team-advisor-title" style={{ marginLeft: "auto", marginRight: "auto" }}>
+            {t.team.advisorTitle}
+          </h3>
+        </div>
+        <div className="team-grid team-grid-advisor">
+          {advisorData.map((member, i) => renderCard(member, i, "advisor"))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Testimonials() {
   const t = useLang();
   const { lang } = useLangRaw();
@@ -809,6 +1016,8 @@ function App() {
       <HowItWorks />
       <div className="divider" />
       <Features />
+      <div className="divider" />
+      <Team />
       <div className="divider" />
       <Testimonials />
       <div className="divider" />
