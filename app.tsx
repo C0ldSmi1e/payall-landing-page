@@ -19,7 +19,7 @@ const translations = {
       subtitle:
         "Your intelligent co-pilot for crypto spending. Find the perfect card, maximize cashback, and protect your privacy — all in one place.",
       cta: "Get Started — It's Free",
-      stat1val: "10+",
+      stat1val: "100+",
       stat1label: "Crypto Cards Analyzed",
       stat2val: "8%",
       stat2label: "Max Cashback Rate",
@@ -124,7 +124,7 @@ const translations = {
       subtitle:
         "你的智能加密消费助手。为你找到最优卡片、最大化返现、守护隐私 — 一站式搞定。",
       cta: "免费开始使用",
-      stat1val: "10+",
+      stat1val: "100+",
       stat1label: "加密卡全面分析",
       stat2val: "8%",
       stat2label: "最高返现比例",
@@ -415,7 +415,7 @@ const advisorData = [
 
 const LangContext = createContext<{ lang: Lang; setLang: (l: Lang) => void }>({
   lang: "en",
-  setLang: () => {},
+  setLang: () => { },
 });
 
 function useLang() {
