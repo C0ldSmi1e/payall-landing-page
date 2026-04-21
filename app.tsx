@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useState, useEffect, useRef, type ReactNode } from "react";
 import { createRoot } from "react-dom/client";
 import "./styles.css";
+import logoUrl from "./assets/pc-logo.png";
 
 /* ═══════════════════════════════════════
    Translations
@@ -536,9 +537,8 @@ function Nav() {
   return (
     <nav className={`nav ${scrolled ? "scrolled" : ""}`}>
       <div className="nav-inner">
-        <a href="#" className="nav-logo" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-          <span className="nav-logo-icon">P</span>
-          PayAll
+        <a href="#" className="nav-logo" aria-label="PayAll" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+          <img src={logoUrl} alt="PayAll" className="nav-logo-img" />
         </a>
         <div className="nav-right">
           <div className="lang-toggle">
@@ -975,8 +975,7 @@ function Footer() {
       <div className="container footer-inner">
         <div className="footer-left">
           <div className="footer-logo">
-            <span className="footer-logo-icon">P</span>
-            PayAll
+            <img src={logoUrl} alt="PayAll" className="footer-logo-img" />
           </div>
           <div className="footer-links">
             <a href="https://static.payall.pro/payall-privacy-en.html" target="_blank" rel="noopener noreferrer">{t.footer.privacy}</a>
@@ -987,7 +986,7 @@ function Footer() {
           <a href="mailto:support@payall.pro" className="footer-social" aria-label="Email">
             <IconMail />
           </a>
-          <a href="https://x.com/PayAllU" className="footer-social" target="_blank" rel="noopener noreferrer" aria-label="X">
+          <a href="https://x.com/PayAll_AI" className="footer-social" target="_blank" rel="noopener noreferrer" aria-label="X">
             <IconX />
           </a>
           <span className="footer-copyright">{t.footer.copyright}</span>
