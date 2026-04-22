@@ -419,6 +419,39 @@ const LangContext = createContext<{ lang: Lang; setLang: (l: Lang) => void }>({
   setLang: () => { },
 });
 
+const LANG_KEY = "lang";
+const SHARED_COOKIE_DOMAIN = ".payall.pro";
+
+function isValidLang(value: string | null | undefined): value is Lang {
+  return value === "en" || value === "zh";
+}
+
+function getCookieLang(): Lang | null {
+  if (typeof document === "undefined") return null;
+  const match = document.cookie.match(/(?:^|;\s*)lang=(en|zh)(?:;|$)/);
+  return isValidLang(match?.[1]) ? match[1] : null;
+}
+
+function setSharedLangCookie(lang: Lang) {
+  if (typeof document === "undefined") return;
+  document.cookie = `lang=${lang}; domain=${SHARED_COOKIE_DOMAIN}; path=/; max-age=31536000; Secure; SameSite=Lax`;
+}
+
+function getInitialLang(): Lang {
+  if (typeof window === "undefined") return "en";
+  const localLang = window.localStorage.getItem(LANG_KEY);
+  if (isValidLang(localLang)) return localLang;
+  const cookieLang = getCookieLang();
+  return cookieLang ?? "en";
+}
+
+function persistLang(lang: Lang) {
+  if (typeof window !== "undefined") {
+    window.localStorage.setItem(LANG_KEY, lang);
+  }
+  setSharedLangCookie(lang);
+}
+
 function useLang() {
   const { lang } = useContext(LangContext);
   return translations[lang];
@@ -1001,7 +1034,11 @@ function Footer() {
    ═══════════════════════════════════════ */
 
 function App() {
-  const [lang, setLang] = useState<Lang>("en");
+  const [lang, setLang] = useState<Lang>(() => getInitialLang());
+
+  useEffect(() => {
+    persistLang(lang);
+  }, [lang]);
 
   return (
     <LangContext.Provider value={{ lang, setLang }}>
