@@ -15,8 +15,8 @@ const translations = {
     hero: {
       eyebrow: "AI-Powered Crypto Spending",
       headline1: "PayAll",
-      headline2: "Pay",
-      headline3: "Router",
+      headline2: "Pay Router",
+      headline3: "with AI",
       subtitle:
         "Your intelligent co-pilot for crypto spending. Find the perfect card, maximize cashback, and protect your privacy — all in one place.",
       cta: "Get Started — It's Free",
@@ -63,8 +63,8 @@ const translations = {
       v1desc: "Our AI continuously monitors the entire crypto card ecosystem — rates, promotions, fee changes — so you never miss an opportunity.",
       v2title: "Predictive Optimization",
       v2desc: "Machine learning models trained on millions of data points predict the best payment strategy for every purchase, before you even tap your card.",
-      v3title: "Decentralized & Trustless",
-      v3desc: "Your financial data never leaves your device. PayAll runs locally-first, with zero-knowledge architecture ensuring complete sovereignty over your information.",
+      v3title: "Agentic Payment",
+      v3desc: "Built for the agent economy. PayAll gives AI agents the rails to transact autonomously — selecting the optimal card, executing payments, and adapting in real time, with no human in the loop.",
     },
     howItWorks: {
       label: "How It Works",
@@ -119,9 +119,9 @@ const translations = {
     nav: { cta: "立即开始" },
     hero: {
       eyebrow: "AI 驱动加密消费",
-      headline1: "AI 驱动",
-      headline2: "全球加密",
-      headline3: "支付",
+      headline1: "PayAll",
+      headline2: "支付路由",
+      headline3: "AI 驱动",
       subtitle:
         "你的智能加密消费助手。为你找到最优卡片、最大化返现、守护隐私 — 一站式搞定。",
       cta: "免费开始使用",
@@ -168,8 +168,8 @@ const translations = {
       v1desc: "AI 持续监控整个加密卡生态 — 费率、促销、变化 — 让你不错过任何机会。",
       v2title: "预测性优化",
       v2desc: "基于海量数据训练的机器学习模型，在你刷卡之前就预测出最优支付策略。",
-      v3title: "去中心化与无需信任",
-      v3desc: "你的财务数据永远不离开你的设备。PayAll 本地优先运行，零知识架构确保你对信息拥有完全主权。",
+      v3title: "智能体支付",
+      v3desc: "为 AI 智能体经济而生。PayAll 让 AI Agent 自主完成支付 — 自动选择最优卡片、实时执行交易、动态调整策略，全程无需人工介入。",
     },
     howItWorks: {
       label: "使用流程",
@@ -534,6 +534,17 @@ const IconLock = () => (
   </svg>
 );
 
+const IconBot = () => (
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M12 8V4H8" />
+    <rect x="4" y="8" width="16" height="12" rx="2" />
+    <path d="M2 14h2" />
+    <path d="M20 14h2" />
+    <path d="M15 13v2" />
+    <path d="M9 13v2" />
+  </svg>
+);
+
 const IconArrowRight = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
     <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
@@ -747,7 +758,7 @@ function Vision() {
   const items = [
     { icon: <IconRadar />, title: t.vision.v1title, desc: t.vision.v1desc },
     { icon: <IconBrain />, title: t.vision.v2title, desc: t.vision.v2desc },
-    { icon: <IconLock />, title: t.vision.v3title, desc: t.vision.v3desc },
+    { icon: <IconBot />, title: t.vision.v3title, desc: t.vision.v3desc },
   ];
 
   return (
