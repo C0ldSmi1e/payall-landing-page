@@ -14,9 +14,9 @@ const translations = {
     nav: { cta: "Get Started" },
     hero: {
       eyebrow: "AI-Powered Crypto Spending",
-      headline1: "Crypto Pay",
-      headline2: "Anywhere",
-      headline3: "with AI",
+      headline1: "PayAll",
+      headline2: "Pay",
+      headline3: "Router",
       subtitle:
         "Your intelligent co-pilot for crypto spending. Find the perfect card, maximize cashback, and protect your privacy — all in one place.",
       cta: "Get Started — It's Free",
