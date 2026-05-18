@@ -13,12 +13,12 @@ const translations = {
   en: {
     nav: { cta: "Get Started" },
     hero: {
-      eyebrow: "AI-Powered Crypto Spending",
-      headline1: "PayAll",
-      headline2: "Pay Router",
+      eyebrow: "AI-Assisted Crypto Card Comparison",
+      headline1: "Crypto Card",
+      headline2: "Intelligence",
       headline3: "with AI",
       subtitle:
-        "Your intelligent co-pilot for crypto spending. Find the perfect card, maximize cashback, and protect your privacy — all in one place.",
+        "Your AI-assisted companion for comparing third-party crypto card options. Review card features, cashback, fees, and privacy-related information in one place.",
       cta: "Get Started — It's Free",
       stat1val: "100+",
       stat1label: "Crypto Cards Analyzed",
@@ -28,71 +28,75 @@ const translations = {
       stat3label: "Merchants Worldwide",
     },
     heroCard: {
-      header: "AI Recommendation",
-      live: "Live",
-      scene: "Buying coffee at Starbucks — $4.80",
-      bestLabel: "BEST CARD",
+      header: "AI Comparison",
+      live: "Preview",
+      scene: "Before a purchase at Starbucks — $4.80",
+      bestLabel: "REFERENCE MATCH",
       bestCard: "Crypto Card A",
       cashback: "+8% cashback",
-      save: "You save $0.38",
+      save: "Reference savings $0.38",
       alt1: "Crypto Card B",
       alt1cb: "+4%",
       alt2: "Crypto Card C",
       alt2cb: "+3%",
-      footer: "Optimized by PayAll AI",
+      footer: "Compared by PayAll AI",
+      chip2: "Issuer Terms",
+      chip3: "Fee Info",
     },
     why: {
       label: "Why PayAll",
-      title: "Why You Need PayAll",
-      b1title: "Instant Crypto Spending",
+      title: "Why Compare Crypto Cards Here",
+      b1title: "Compare Crypto Card Options",
       b1desc:
-        "Make purchases using your digital assets at 40+ million merchants worldwide. Spend crypto as easily as swiping a card.",
+        "Compare third-party card providers that may support digital-asset funding and broad merchant acceptance. Review issuer terms before applying.",
       b2title: "Protect Your Privacy",
       b2desc:
-        "Keep transactions separate from traditional banks. Your data stays encrypted locally — we spot trends, not transactions.",
-      b3title: "Earn Up to 8% Back",
+        "Use a privacy-first comparison experience. PayAll is designed to minimize personal data collection and does not intentionally collect private keys, mnemonic phrases, wallet passwords, or card account credentials.",
+      b3title: "Review Potential Rewards",
       b3desc:
-        "Earn up to 8% cashback in crypto — several times greater than traditional cards, with zero exchange fees.",
+        "Compare publicly available cashback, fee, and promotional information from third-party issuers. Actual rewards and fees depend on issuer terms.",
     },
     vision: {
       label: "Our Vision",
-      title: "The Future of Crypto Spending",
+      title: "The Future of Crypto Card Comparison",
       subtitle:
-        "We're building the intelligence layer for crypto payments — where AI meets blockchain to make every transaction smarter, cheaper, and more private.",
+        "We're building an intelligence layer for crypto card information — AI-assisted comparisons that help users review third-party card features before applying or using a card.",
       v1title: "Real-Time Market Intelligence",
-      v1desc: "Our AI continuously monitors the entire crypto card ecosystem — rates, promotions, fee changes — so you never miss an opportunity.",
-      v2title: "Predictive Optimization",
-      v2desc: "Machine learning models trained on millions of data points predict the best payment strategy for every purchase, before you even tap your card.",
-      v3title: "Agentic Payment",
-      v3desc: "Built for the agent economy. PayAll gives AI agents the rails to transact autonomously — selecting the optimal card, executing payments, and adapting in real time, with no human in the loop.",
+      v1desc: "Our AI monitors publicly available crypto card information — rates, promotions, and fee changes — to help you stay informed.",
+      v2title: "AI-Assisted Comparison",
+      v2desc: "Machine learning models compare card information, fees, and rewards to help you identify options before you make a purchase.",
+      v3title: "Privacy-First Design",
+      v3desc: "PayAll follows a privacy-first design and is built to minimize personal data collection while protecting user data through appropriate technical safeguards.",
     },
     howItWorks: {
       label: "How It Works",
-      title: "Four Steps to Smarter Spending",
+      title: "Four Steps to Smarter Card Comparison",
       s1title: "Share Your Needs",
-      s1desc: "Tell us your spending habits, preferred currencies, and what matters most to you.",
-      s2title: "AI Analyzes Data",
-      s2desc: "Our engine processes thousands of data points — merchant codes, reward structures, fee schedules.",
-      s3title: "Get Recommendations",
-      s3desc: "Receive personalized card picks ranked by your priorities, with transparent reasoning.",
-      s4title: "Spend Smarter",
-      s4desc: "Use the optimal card for every purchase. PayAll keeps learning and adapting to you.",
+      s1desc: "Tell us your preferences, expected use cases, preferred currencies, and what matters most to you.",
+      s2title: "AI Compares Information",
+      s2desc: "Our engine compares publicly available data — merchant categories, reward structures, and disclosed fee schedules.",
+      s3title: "Review Comparison Results",
+      s3desc: "View AI-assisted card comparisons ranked by your stated priorities, with transparent rationale for reference.",
+      s4title: "Review Before You Decide",
+      s4desc: "Use the comparison results as a reference before choosing or using a third-party card.",
     },
     features: {
       label: "Features",
       title: "What Can PayAll Do For You?",
-      f1title: "AI Card Recommendations",
+      f1title: "AI-Assisted Card Suggestions",
       f1desc:
-        "Get personalized card suggestions based on your spending habits and financial goals — ensuring you always use the most suitable card.",
-      f2title: "Maximize Benefits",
+        "Get AI-assisted card suggestions based on user-selected preferences and publicly available card information. Recommendations are informational only.",
+      f2title: "Compare Benefits & Fees",
       f2desc:
-        "Identify highest cashback rates per merchant category. Avoid unnecessary fees. Discover limited-time promotions and exclusive perks.",
+        "Compare publicly available cashback rates, fees, limited-time promotions, and perks by merchant category for reference.",
       f3title: "Dynamic Market Monitoring",
       f3desc:
-        "Card benefits change constantly. PayAll tracks rates, new card lines, and promotional periods across the entire crypto card market.",
+        "Card benefits change constantly. PayAll tracks publicly available rates, new card lines, and promotional periods across the crypto card market for reference.",
       f4title: "Privacy by Design",
       f4desc:
-        "All data stays encrypted on your local device. Zero server-side storage of personal information. Complete transaction anonymity.",
+        "PayAll is designed to minimize personal data collection and protect user data through appropriate technical safeguards.",
+      disclaimer:
+        "Recommendations are for informational purposes only and do not constitute financial, payment, legal, or suitability advice. Please review card issuer terms before applying or using a card.",
     },
     team: {
       label: "Team",
@@ -105,8 +109,8 @@ const translations = {
       title: "What Users Say",
     },
     ctaBanner: {
-      title: "Ready to Spend Smarter?",
-      subtitle: "Join thousands of crypto users who are already maximizing their card benefits with AI.",
+      title: "Ready to Compare Smarter?",
+      subtitle: "Join crypto users reviewing card features, fees, and rewards with AI-assisted comparisons.",
       cta: "Get Started Now",
     },
     footer: {
@@ -118,12 +122,12 @@ const translations = {
   zh: {
     nav: { cta: "立即开始" },
     hero: {
-      eyebrow: "AI 驱动加密消费",
-      headline1: "PayAll",
-      headline2: "支付路由",
-      headline3: "AI 驱动",
+      eyebrow: "AI 辅助加密卡比较",
+      headline1: "AI 辅助",
+      headline2: "加密卡",
+      headline3: "比较",
       subtitle:
-        "你的智能加密消费助手。为你找到最优卡片、最大化返现、守护隐私 — 一站式搞定。",
+        "你的 AI 辅助加密卡比较助手。集中查看第三方卡片功能、返现、费用和隐私相关信息。",
       cta: "免费开始使用",
       stat1val: "100+",
       stat1label: "加密卡全面分析",
@@ -133,71 +137,75 @@ const translations = {
       stat3label: "全球可用商户",
     },
     heroCard: {
-      header: "AI 推荐",
-      live: "实时",
-      scene: "在星巴克买咖啡 — ¥34.00",
-      bestLabel: "最优卡片",
+      header: "AI 比较",
+      live: "预览",
+      scene: "在星巴克消费前 — ¥34.00",
+      bestLabel: "参考匹配",
       bestCard: "加密卡 A",
       cashback: "+8% 返现",
-      save: "节省 ¥2.72",
+      save: "参考节省 ¥2.72",
       alt1: "加密卡 B",
       alt1cb: "+4%",
       alt2: "加密卡 C",
       alt2cb: "+3%",
-      footer: "由 PayAll AI 优化",
+      footer: "由 PayAll AI 比较",
+      chip2: "发卡方条款",
+      chip3: "费用说明",
     },
     why: {
       label: "为什么选择 PayAll",
-      title: "为什么你需要 PayAll",
-      b1title: "即时加密消费",
+      title: "为什么在这里比较加密卡",
+      b1title: "比较加密卡选项",
       b1desc:
-        "在全球超过 4000 万商户使用你的数字资产消费。刷卡般简单，加密资产即时到账。",
+        "比较可能支持数字资产充值和全球商户网络的第三方卡商。申请前请阅读发卡方条款。",
       b2title: "保护你的隐私",
       b2desc:
-        "将交易与传统银行分离。数据在本地加密存储 — 我们分析趋势，不触碰交易。",
-      b3title: "高达 8% 加密返现",
+        "使用隐私优先的比较体验。PayAll 旨在尽量减少个人数据收集，且不会有意收集私钥、助记词、钱包密码或卡账户凭证。",
+      b3title: "查看潜在权益",
       b3desc:
-        "获得高达 8% 的加密货币返现 — 数倍于传统信用卡，且零兑换手续费。",
+        "比较第三方发卡方公开的返现、费用和促销信息；实际返现和费用以发卡方条款为准。",
     },
     vision: {
       label: "我们的愿景",
-      title: "加密消费的未来",
+      title: "加密卡比较的未来",
       subtitle:
-        "我们正在构建加密支付的智能层 — AI 与区块链的融合，让每笔交易更聪明、更省钱、更私密。",
-      v1title: "实时市场情报",
-      v1desc: "AI 持续监控整个加密卡生态 — 费率、促销、变化 — 让你不错过任何机会。",
-      v2title: "预测性优化",
-      v2desc: "基于海量数据训练的机器学习模型，在你刷卡之前就预测出最优支付策略。",
-      v3title: "智能体支付",
-      v3desc: "为 AI 智能体经济而生。PayAll 让 AI Agent 自主完成支付 — 自动选择最优卡片、实时执行交易、动态调整策略，全程无需人工介入。",
+        "我们正在构建面向加密卡信息的智能层 — 通过 AI 辅助比较，帮助用户在申请或使用第三方卡片前查看相关功能信息。",
+      v1title: "市场信息监测",
+      v1desc: "AI 持续监测公开的加密卡生态信息 — 费率、促销和规则变化 — 帮助你了解可参考的信息。",
+      v2title: "AI 辅助比较",
+      v2desc: "机器学习模型会比较卡片信息、费用与权益，帮助你在消费前识别可选方案。",
+      v3title: "隐私优先设计",
+      v3desc: "PayAll 采用隐私优先设计，旨在尽量减少个人数据收集，并通过适当技术措施保护用户数据。",
     },
     howItWorks: {
       label: "使用流程",
-      title: "四步开启智能消费",
+      title: "四步开启智能卡片比较",
       s1title: "分享你的需求",
-      s1desc: "告诉我们你的消费习惯、偏好币种和最看重的因素。",
-      s2title: "AI 分析数据",
-      s2desc: "引擎处理海量数据 — 商户代码、返现结构、费率规则，精准匹配。",
-      s3title: "获取个性化推荐",
-      s3desc: "收到按你的优先级排列的推荐卡片，推荐逻辑透明可追溯。",
-      s4title: "更聪明地消费",
-      s4desc: "每次消费自动匹配最优卡片。PayAll 持续学习，越用越懂你。",
+      s1desc: "告诉我们你的偏好、预期使用场景、偏好币种和最看重的因素。",
+      s2title: "AI 比较信息",
+      s2desc: "引擎比较公开数据 — 商户类别、返现结构、披露的费用规则。",
+      s3title: "查看比较结果",
+      s3desc: "查看按你声明优先级排序的 AI 辅助卡片比较，附可追溯的参考依据。",
+      s4title: "决策前查看",
+      s4desc: "在选择或使用第三方卡片前，将比较结果作为参考。",
     },
     features: {
       label: "核心功能",
       title: "PayAll 能为你做什么？",
-      f1title: "AI 卡片推荐",
+      f1title: "AI 辅助卡片建议",
       f1desc:
-        "根据你的消费习惯和目标，个性化推荐最适合的卡片 — 确保每次支付都用最优选择。",
-      f2title: "最大化权益",
+        "基于你自主选择的偏好和公开卡片信息，提供 AI 辅助卡片建议；推荐内容仅供信息参考。",
+      f2title: "比较权益与费用",
       f2desc:
-        "自动识别每个商户类别的最高返现率。避免不必要的手续费。发现限时优惠和专属权益。",
+        "比较不同商户类别下公开的返现、费用和限时优惠信息，帮助你发现可参考的卡片权益。",
       f3title: "动态市场监控",
       f3desc:
-        "卡片权益持续变化。PayAll 实时追踪费率、新卡上线和促销活动，覆盖整个加密卡市场。",
+        "卡片权益持续变化。PayAll 持续跟踪公开的费率、新卡上线和促销活动，覆盖整个加密卡市场，供你参考。",
       f4title: "隐私优先设计",
       f4desc:
-        "所有数据在你的本地设备加密存储。零服务端个人信息存储。完整的交易匿名性。",
+        "PayAll 旨在尽量减少个人数据收集，并通过适当技术措施保护用户数据。",
+      disclaimer:
+        "推荐内容仅供信息参考，不构成金融、支付、法律或适用性建议。申请或使用任何卡片前，请查看发卡方条款。",
     },
     team: {
       label: "团队",
@@ -210,8 +218,8 @@ const translations = {
       title: "用户怎么说",
     },
     ctaBanner: {
-      title: "准备好更聪明地消费了吗？",
-      subtitle: "加入数千名已在用 AI 最大化卡片权益的加密用户。",
+      title: "准备好更聪明地比较了吗？",
+      subtitle: "加入正在通过 AI 辅助比较查看卡片功能、费用与权益的加密用户。",
       cta: "立即开始",
     },
     footer: {
@@ -225,8 +233,8 @@ const translations = {
 const testimonialData = [
   {
     name: "Aaron",
-    en: { role: "Overseas Freelancer", quote: "Before every trip abroad I used to wonder which card saves the most; now I just want PayAll to automatically tell me." },
-    zh: { role: "海外自由职业者", quote: "每次出国前都纠结哪张卡最划算，现在只想让 PayAll 直接告诉我。" },
+    en: { role: "Overseas Freelancer", quote: "Before every trip abroad I used to compare card fees and rewards manually; now I want PayAll to help me review options before deciding." },
+    zh: { role: "海外自由职业者", quote: "每次出国前都要手动比较卡片费用和权益，现在希望 PayAll 帮我在决策前查看选项。" },
   },
   {
     name: "Lydia",
@@ -235,28 +243,28 @@ const testimonialData = [
   },
   {
     name: "Neo",
-    en: { role: "Crypto Community Member", quote: "I want a card that doesn't require KYC but still works — an aggregation platform like PayAll is exactly what I need." },
-    zh: { role: "匿名加密社区成员", quote: "我想要一张不用 KYC 但能用的卡 — PayAll 这样的聚合平台正是我需要的。" },
+    en: { role: "Crypto Card Researcher", quote: "I want a clearer way to compare card requirements, fees, and supported regions before applying — an aggregation platform like PayAll is exactly what I need." },
+    zh: { role: "加密卡研究者", quote: "我希望在申请前更清楚地比较卡片要求、费用和支持地区 — PayAll 这样的聚合平台正是我需要的。" },
   },
   {
     name: "Jason",
-    en: { role: "Heavy DeFi User", quote: "Opening, selecting, and comparing cashback cards is too much hassle; I hope PayAll really does it with one click." },
-    zh: { role: "DeFi 重度用户", quote: "开卡、选卡、比较返现太麻烦了，希望 PayAll 真的能一键搞定。" },
+    en: { role: "Heavy DeFi User", quote: "Opening, selecting, and comparing cashback cards is too much hassle; I hope PayAll can make the comparison process easier." },
+    zh: { role: "DeFi 重度用户", quote: "开卡、选卡、比较返现太麻烦了，希望 PayAll 能让比较过程更简单。" },
   },
   {
     name: "Emily",
-    en: { role: "Crypto Payment Expert", quote: "Sometimes having too many cards makes them hard to use; I look forward to PayAll telling me which one to use." },
-    zh: { role: "加密支付专家", quote: "有时候卡太多反而不知道用哪张，期待 PayAll 直接告诉我。" },
+    en: { role: "Crypto Card User", quote: "Sometimes having too many cards makes them hard to compare; I look forward to PayAll helping me review relevant options." },
+    zh: { role: "加密卡用户", quote: "有时候卡太多反而不好比较，期待 PayAll 帮我查看相关选项。" },
   },
   {
     name: "Leo",
-    en: { role: "NFT Collector", quote: "Too many tokens and chains — I don't know which cards accept which; it'd be great if PayAll could auto-identify them." },
-    zh: { role: "NFT 收藏家", quote: "币种和链太多了，根本不知道哪张卡支持哪些，PayAll 能自动识别就太好了。" },
+    en: { role: "NFT Collector", quote: "Too many tokens and chains — I don't know which card providers support which features; it'd be great if PayAll could help compare them." },
+    zh: { role: "NFT 收藏家", quote: "币种和链太多了，根本不知道哪些发卡方支持哪些功能，PayAll 能帮助比较就太好了。" },
   },
   {
     name: "Doris",
-    en: { role: "Web3 Novice", quote: "Right now I have to calculate fees myself before spending; having an AI help me choose is so much more reassuring." },
-    zh: { role: "Web3 新手用户", quote: "现在每次消费前都要自己算手续费，有 AI 帮我选放心多了。" },
+    en: { role: "Web3 Novice", quote: "Right now I have to compare fees myself before deciding; having AI-assisted comparisons makes the process clearer." },
+    zh: { role: "Web3 新手用户", quote: "现在每次决策前都要自己比较手续费，有 AI 辅助比较会更清楚。" },
   },
   {
     name: "Vincent",
@@ -265,13 +273,13 @@ const testimonialData = [
   },
   {
     name: "Chloe",
-    en: { role: "On-chain Consumer", quote: "Stop making me switch cards, trial and error, and miss opportunities — PayAll, launch now!" },
-    zh: { role: "链上消费达人", quote: "别再让我换卡试错、错过优惠了 — PayAll 赶紧上线！" },
+    en: { role: "On-chain Card User", quote: "Stop making me compare cards manually and miss useful information — PayAll, launch now!" },
+    zh: { role: "链上卡片用户", quote: "别再让我手动比较卡片、错过有用信息了 — PayAll 赶紧上线！" },
   },
   {
     name: "Ken",
-    en: { role: "Crypto Project Founder", quote: "The 'auto-recommend the optimal card' feature alone makes me want to start using it immediately." },
-    zh: { role: "加密项目创始人", quote: "光是'自动推荐最优卡'这个功能，就让我想立刻用起来。" },
+    en: { role: "Crypto Project Founder", quote: "The AI-assisted card comparison feature alone makes me want to start using it immediately." },
+    zh: { role: "加密项目创始人", quote: "光是‘AI 辅助卡片比较’这个功能，就让我想立刻用起来。" },
   },
 ];
 
@@ -534,17 +542,6 @@ const IconLock = () => (
   </svg>
 );
 
-const IconBot = () => (
-  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M12 8V4H8" />
-    <rect x="4" y="8" width="16" height="12" rx="2" />
-    <path d="M2 14h2" />
-    <path d="M20 14h2" />
-    <path d="M15 13v2" />
-    <path d="M9 13v2" />
-  </svg>
-);
-
 const IconArrowRight = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
     <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
@@ -708,8 +705,8 @@ function Hero() {
 
             {/* floating chips */}
             <div className="mockup-chip mockup-chip-1">Apple Pay</div>
-            <div className="mockup-chip mockup-chip-2">No KYC</div>
-            <div className="mockup-chip mockup-chip-3">0 Fee</div>
+            <div className="mockup-chip mockup-chip-2">{t.heroCard.chip2}</div>
+            <div className="mockup-chip mockup-chip-3">{t.heroCard.chip3}</div>
           </div>
         </div>
       </div>
@@ -758,7 +755,7 @@ function Vision() {
   const items = [
     { icon: <IconRadar />, title: t.vision.v1title, desc: t.vision.v1desc },
     { icon: <IconBrain />, title: t.vision.v2title, desc: t.vision.v2desc },
-    { icon: <IconBot />, title: t.vision.v3title, desc: t.vision.v3desc },
+    { icon: <IconLock />, title: t.vision.v3title, desc: t.vision.v3desc },
   ];
 
   return (
@@ -852,6 +849,7 @@ function Features() {
             </div>
           ))}
         </div>
+        <p className="section-disclaimer reveal reveal-delay-4">{t.features.disclaimer}</p>
       </div>
     </section>
   );

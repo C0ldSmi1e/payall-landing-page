@@ -944,6 +944,15 @@ img { max-width: 100%; display: block; }
   background: var(--bg-secondary);
 }
 
+.section-disclaimer {
+  margin: 24px auto 0;
+  max-width: 860px;
+  color: rgba(255, 255, 255, 0.56);
+  font-size: 13px;
+  line-height: 1.7;
+  text-align: center;
+}
+
 .features-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
