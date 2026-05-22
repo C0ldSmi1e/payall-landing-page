@@ -360,18 +360,6 @@ const teamData = [
 
 const advisorData = [
   {
-    name: "Don Berman",
-    initials: "DB",
-    en: {
-      role: "Advisor",
-      bio: ["Chairman, CEO and Founder @ Cardworks"],
-    },
-    zh: {
-      role: "顾问",
-      bio: ["Cardworks 董事长、CEO 及创始人"],
-    },
-  },
-  {
     name: "Thomas Keller",
     initials: "TK",
     en: {
