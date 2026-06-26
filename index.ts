@@ -10,4 +10,4 @@ Bun.serve({
   },
 });
 
-console.log("PayAll landing page running at http://localhost:3000");
+console.log("PayAll landing page is running at http://localhost:3000");
