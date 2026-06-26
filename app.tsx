@@ -1060,4 +1060,34 @@ function App() {
   );
 }
 
+// Browser wallet extensions (MetaMask, Phantom, OKX, etc.) inject scripts that
+// fight over `window.ethereum`, throwing "Cannot redefine property: ethereum".
+// These errors come from the visitor's extensions, not from our site, so we
+// filter them out to keep the console and any error reporting clean.
+const isExtensionError = (source?: string, message?: string): boolean => {
+  const fromExtension = /^(chrome|moz|safari-web)-extension:\/\//.test(source ?? "");
+  const ethereumClash = /Cannot redefine property: ethereum/i.test(message ?? "");
+  return fromExtension || ethereumClash;
+};
+
+window.addEventListener(
+  "error",
+  (event) => {
+    if (isExtensionError(event.filename, event.message)) {
+      event.stopImmediatePropagation();
+      event.preventDefault();
+    }
+  },
+  true,
+);
+
+window.addEventListener("unhandledrejection", (event) => {
+  const reason = event.reason;
+  const message = reason instanceof Error ? reason.message : String(reason ?? "");
+  const source = reason instanceof Error ? (reason.stack ?? "") : "";
+  if (isExtensionError(source, message)) {
+    event.preventDefault();
+  }
+});
+
 createRoot(document.getElementById("root")!).render(<App />);
