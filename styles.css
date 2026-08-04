@@ -380,6 +380,13 @@ img { max-width: 100%; display: block; }
   max-width: 460px;
 }
 
+.hero-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
 .hero-cta {
   display: inline-flex;
   align-items: center;
@@ -1259,8 +1266,9 @@ img { max-width: 100%; display: block; }
   position: relative;
 }
 
-.cta-banner .hero-cta {
+.cta-banner .hero-cta-group {
   position: relative;
+  justify-content: center;
 }
 
 /* ── Footer ── */
@@ -1390,6 +1398,7 @@ img { max-width: 100%; display: block; }
 
   .nav-cta { display: none; }
   .nav-inner { height: 60px; }
+  .hero-cta-group { flex-direction: column; align-items: stretch; }
 
   .hero { min-height: auto; padding-top: 100px; padding-bottom: 60px; }
   .hero-headline { font-size: clamp(32px, 8vw, 48px); }
@@ -1413,6 +1422,7 @@ img { max-width: 100%; display: block; }
 @media (max-width: 480px) {
   .hero-stats { gap: 16px; }
   .hero-cta { width: 100%; justify-content: center; }
+  .hero-cta-group { width: 100%; }
   .mockup-card { width: 280px; padding: 18px; }
   .mockup-best-icon { width: 36px; height: 36px; font-size: 13px; }
 }
