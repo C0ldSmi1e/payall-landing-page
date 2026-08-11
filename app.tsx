@@ -11,7 +11,7 @@ type Lang = "en" | "zh";
 
 const translations = {
   en: {
-    nav: { cta: "Get Started", ctaNew: "New PayAll" },
+    nav: { cta: "Get Started" },
     hero: {
       eyebrow: "AI-Assisted Crypto Card Comparison",
       headline1: "Crypto Card",
@@ -20,7 +20,6 @@ const translations = {
       subtitle:
         "Your AI-assisted companion for comparing third-party crypto card options. Review card features, cashback, fees, and privacy-related information in one place.",
       cta: "Get Started — It's Free",
-      ctaNew: "New PayAll",
       stat1val: "100+",
       stat1label: "Crypto Cards Analyzed",
       stat2val: "8%",
@@ -113,7 +112,6 @@ const translations = {
       title: "Ready to Compare Smarter?",
       subtitle: "Join crypto users reviewing card features, fees, and rewards with AI-assisted comparisons.",
       cta: "Get Started Now",
-      ctaNew: "New PayAll",
     },
     footer: {
       privacy: "Privacy Policy",
@@ -122,7 +120,7 @@ const translations = {
     },
   },
   zh: {
-    nav: { cta: "立即开始", ctaNew: "新版PayAll" },
+    nav: { cta: "立即开始" },
     hero: {
       eyebrow: "AI 辅助加密卡比较",
       headline1: "AI 辅助",
@@ -131,7 +129,6 @@ const translations = {
       subtitle:
         "你的 AI 辅助加密卡比较助手。集中查看第三方卡片功能、返现、费用和隐私相关信息。",
       cta: "免费开始使用",
-      ctaNew: "新版PayAll",
       stat1val: "100+",
       stat1label: "加密卡全面分析",
       stat2val: "8%",
@@ -224,7 +221,6 @@ const translations = {
       title: "准备好更聪明地比较了吗？",
       subtitle: "加入正在通过 AI 辅助比较查看卡片功能、费用与权益的加密用户。",
       cta: "立即开始",
-      ctaNew: "新版PayAll",
     },
     footer: {
       privacy: "隐私政策",
@@ -583,8 +579,7 @@ function Nav() {
               ZH
             </button>
           </div>
-          <a href="https://app.payall.pro/" target="_blank" rel="noopener noreferrer" className="nav-cta">{t.nav.cta}</a>
-          <a href="https://beta.payall.pro" target="_blank" rel="noopener noreferrer" className="nav-cta">{t.nav.ctaNew}</a>
+          <a href="https://beta.payall.pro/" target="_blank" rel="noopener noreferrer" className="nav-cta">{t.nav.cta}</a>
         </div>
       </div>
     </nav>
@@ -617,20 +612,12 @@ function Hero() {
             {t.hero.headline3}
           </h1>
           <p className="hero-subtitle">{t.hero.subtitle}</p>
-          <div className="hero-cta-group">
-            <a href="https://app.payall.pro/" target="_blank" rel="noopener noreferrer" className="hero-cta">
-              {t.hero.cta}
-              <span className="hero-cta-arrow">
-                <IconArrowRight />
-              </span>
-            </a>
-            <a href="https://beta.payall.pro" target="_blank" rel="noopener noreferrer" className="hero-cta">
-              {t.hero.ctaNew}
-              <span className="hero-cta-arrow">
-                <IconArrowRight />
-              </span>
-            </a>
-          </div>
+          <a href="https://beta.payall.pro/" target="_blank" rel="noopener noreferrer" className="hero-cta">
+            {t.hero.cta}
+            <span className="hero-cta-arrow">
+              <IconArrowRight />
+            </span>
+          </a>
           <div className="hero-stats">
             <div>
               <div className="hero-stat-value">{t.hero.stat1val}</div>
@@ -1001,16 +988,10 @@ function CtaBanner() {
           <h2 className="cta-banner-title">{t.ctaBanner.title}</h2>
           <p className="cta-banner-subtitle">{t.ctaBanner.subtitle}</p>
         </div>
-        <div className="hero-cta-group reveal reveal-delay-1">
-          <a href="https://app.payall.pro/" target="_blank" rel="noopener noreferrer" className="hero-cta">
-            {t.ctaBanner.cta}
-            <span className="hero-cta-arrow"><IconArrowRight /></span>
-          </a>
-          <a href="https://beta.payall.pro" target="_blank" rel="noopener noreferrer" className="hero-cta">
-            {t.ctaBanner.ctaNew}
-            <span className="hero-cta-arrow"><IconArrowRight /></span>
-          </a>
-        </div>
+        <a href="https://beta.payall.pro/" target="_blank" rel="noopener noreferrer" className="hero-cta reveal reveal-delay-1">
+          {t.ctaBanner.cta}
+          <span className="hero-cta-arrow"><IconArrowRight /></span>
+        </a>
       </div>
     </section>
   );
